@@ -160,3 +160,62 @@ public class MainActivity extends Activity
 		});
 	}
 }
+
+
+
+
+//animation 動畫
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<set 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:interpolator="@anim/cycle" 
+> 
+<translate 
+   android:fromXDelta="0" 
+   android:toXDelta="-10" 
+   android:fromYDelta="0" 
+   android:toYDelta="-10" 
+   android:duration="300"    
+/>
+<translate 
+   android:fromXDelta="0" 
+   android:toXDelta="10" 
+   android:fromYDelta="0" 
+   android:toYDelta="-10" 
+   android:startOffset="400"
+   android:duration="300"    
+/>
+<translate 
+   android:fromXDelta="0" 
+   android:toXDelta="-10" 
+   android:fromYDelta="0" 
+   android:toYDelta="10" 
+   android:startOffset="800"
+   android:duration="300"    
+/>
+<translate 
+   android:fromXDelta="0" 
+   android:toXDelta="10" 
+   android:fromYDelta="0" 
+   android:toYDelta="10" 
+   android:startOffset="950"
+   android:duration="300"    
+/>
+</set>
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<cycleInterpolator 
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  android:cycles="200" 
+/>
+
+
+
