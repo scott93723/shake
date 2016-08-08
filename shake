@@ -1,0 +1,162 @@
+package com.bn.ex12c;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class MainActivity extends Activity
+
+{
+	int i = 1;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+
+		Button button01 = (Button) findViewById(R.id.Button01);
+		button01.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				EditText edit01 = (EditText) findViewById(R.id.EditText01);
+				String math = edit01.getText().toString().trim();
+
+				i = (int) (Math.random() * 10) + 1;// 產生亂數
+			
+
+				if (math.equals("1")) {
+					Toast.makeText(MainActivity.this, "好神啊！！！你猜1!!!",
+							Toast.LENGTH_SHORT).show();
+
+				} else {
+					Animation ai = AnimationUtils.loadAnimation(
+							MainActivity.this, R.anim.shake);
+					edit01.startAnimation(ai);
+				}
+
+				if (math.equals("2")) {
+					Toast.makeText(MainActivity.this, "好神啊！！！",
+							Toast.LENGTH_SHORT).show();
+
+				}
+
+				else {
+					Animation ai = AnimationUtils.loadAnimation(
+							MainActivity.this, R.anim.shake);
+					edit01.startAnimation(ai);
+				}
+
+				if (math.equals("3")) {
+					Toast.makeText(MainActivity.this, "好神啊！！！",
+							Toast.LENGTH_SHORT).show();
+
+				}
+
+				else {
+					Animation ai = AnimationUtils.loadAnimation(
+							MainActivity.this, R.anim.shake);
+					edit01.startAnimation(ai);
+				}
+
+				if (math.equals("4")) {
+
+					Toast.makeText(MainActivity.this, "阿不就好棒棒!",
+							Toast.LENGTH_LONG).show();
+
+				}
+
+				else {
+					Animation ai = AnimationUtils.loadAnimation(
+							MainActivity.this, R.anim.shake);
+					edit01.startAnimation(ai);
+				}
+
+				if (math.equals("5")) {
+
+					Toast.makeText(MainActivity.this, "阿不就好棒棒!",
+							Toast.LENGTH_LONG).show();
+
+				}
+
+				else {
+					Animation ai = AnimationUtils.loadAnimation(
+							MainActivity.this, R.anim.shake);
+					edit01.startAnimation(ai);
+				}
+
+				if (math.equals("6")) {
+
+					Toast.makeText(MainActivity.this, "阿不就好棒棒!",
+							Toast.LENGTH_LONG).show();
+
+				}
+
+				else {
+					Animation ai = AnimationUtils.loadAnimation(
+							MainActivity.this, R.anim.shake);
+					edit01.startAnimation(ai);
+				}
+
+				if (math.equals("7")) {
+					Toast.makeText(MainActivity.this, "好神啊！！！",
+							Toast.LENGTH_SHORT).show();
+
+					Toast.makeText(MainActivity.this, "阿不就好棒棒!",
+							Toast.LENGTH_LONG).show();
+
+				}
+
+				else {
+					Animation ai = AnimationUtils.loadAnimation(
+							MainActivity.this, R.anim.shake);
+					edit01.startAnimation(ai);
+				}
+
+				if (math.equals("8")) {
+
+					Toast.makeText(MainActivity.this, "阿不就好棒棒!",
+							Toast.LENGTH_LONG).show();
+
+				}
+
+				else {
+					Animation ai = AnimationUtils.loadAnimation(
+							MainActivity.this, R.anim.shake);
+					edit01.startAnimation(ai);
+				}
+
+				if (math.equals("9")) {
+
+					Toast.makeText(MainActivity.this, "阿不就好棒棒!",
+							Toast.LENGTH_LONG).show();
+
+				}
+
+				else {
+					Animation ai = AnimationUtils.loadAnimation(
+							MainActivity.this, R.anim.shake);
+					edit01.startAnimation(ai);
+				}
+
+				if (math.equals("10")) {
+
+					Toast.makeText(MainActivity.this, "阿恭喜你啊!!!!",
+							Toast.LENGTH_LONG).show();
+
+				}
+
+				else {
+					Animation ai = AnimationUtils.loadAnimation(
+							MainActivity.this, R.anim.shake);
+					edit01.startAnimation(ai);
+				}
+
+			}
+		});
+	}
+}
