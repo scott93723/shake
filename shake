@@ -1,4 +1,4 @@
-package com.bn.ex12c;
+package com.holysung.tomteachertaughtme;
 
 import android.app.Activity;
 import android.os.Bundle;
